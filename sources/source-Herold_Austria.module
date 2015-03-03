@@ -39,7 +39,9 @@ class Herold_Austria extends superfecta_base {
 		// regex patterns to search for
 		$regexp = array(
 //			'~<div class="result-wrap"><h2 class="fullw"><a href=".*?">(.+?)</a></h2>~',   // 2014-06-27 working for residential
-			'~<b>1.</b> <a onclick=".*?" href=".*?">(.+?)</a>    </h2>~',  // 2014-07-02 working for residential and business from mobi links
+//			'~<b>1.</b> <a onclick=".*?" href=".*?">(.+?)</a>    </h2>~',  // 2014-07-02 working for residential and business from mobi links
+			'~<b>1.</b> <a data-clickpos=".*?" href=".*?">(.+?)</a>    </h2>~',  // 2015-03-03 working for residential and business from mobi links
+
 		);
 
 		// first search for Residential match
